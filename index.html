@@ -1,0 +1,67 @@
+<!-- IN PROGRESS -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TWITTER CLONE</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<!-- CSS -->
+		<link rel="stylesheet" href="index.css">
+
+		<!-- 11. Add some awesome icons -->
+		<!--
+		Challenge:
+		1. Bring in the Font Awesome CDN.
+		2. Add a comment to the HTML. 
+		-->
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<h1>Twimba</h1>
+		</header>
+		<main>
+			<div class="tweet-input-area">
+				<img src="images/scrimbalogo.png" class="profile-pic">
+				<!-- 4. Add TextArea -->
+				<!-- 
+				Challenge
+				1. Add a textarea.
+				2. Give it placeholder text as shown in the 
+					slide and an id of "tweet-input".
+				-->
+				<textArea placeholder="What's happening?" id="tweet-input"></textArea>
+			</div>
+			<button id="tweet-btn">Tweet</button>
+			<div class="feed" id="feed">
+				<!-- Tweets here!! -->
+			</div>
+		</main>
+		<script src="index.js" type="module"></script>
+	</body>
+
+</html>
+
+<!-- 
+	1) .forEach() == used to iterate over arrays
+	2) CDNs (Content Delivery Network) == used to get icons & generate UUIDs for the new tweets
+		a) add icons 
+		b) generate UUIDs
+	3) textarea == gives multiline input field
+	4) data attributes == used to store pcs of info in an element
+	5) conditionally render styles ==
+	6) NOT operator (!) == used to flip a boolean
+ -->
+
+ <!-- https://cdnjs.com/libraries/font-awesome  == copy link tag-->
+ <!-- https://fontawesome.com/ -->
